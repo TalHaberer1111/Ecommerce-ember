@@ -1,6 +1,6 @@
 {{#if changeProduct}}
   <div id="product-form">
-    <h2>Add New Product</h2>
+    <h2>Edit Product</h2>
     <form>
       <div class="form-group">
         <label for="title">Product Name:</label>
@@ -18,10 +18,10 @@
         <label for="cost">Price: </label>
         {{textarea value=cost id="cost"}}
       </div>
-      <button class="btn btn-default" {{action 'saveProduct'}}>Put this Product Up for Sale</button>
-      <button class="btn btn-warning"{{action 'hideProductForm'}}>Cancel</button>
+      <button class="btn btn-default" {{action 'saveProduct'}}>Save</button>
+      <button class="btn btn-warning"{{action 'hideChangeProductForm'}}>Cancel</button>
     </form>
   </div>
 {{else}}
-  <button id="ask-product" class="btn-lg btn-primary" {{action 'updateProductForm'}}>Sell a New Product</button>
+  <button id="ask-product" class="btn-lg btn-primary" {{action 'updateProductForm'}}>Edit an Existing Product</button>
 {{/if}}

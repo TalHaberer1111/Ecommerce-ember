@@ -4,7 +4,10 @@ export default Ember.Route.extend({
   shoppingCart: Ember.inject.service(),
 
   model() {
-    return this.store.findAll('category');
+    return Ember.RSVP.hash({
+      category: this.store.findAll('category'),
+      product: this.store.findAll('product')
+    });
   },
 
   actions: {
@@ -26,6 +29,12 @@ export default Ember.Route.extend({
         return category.destroyRecord();
       });
       this.transitionTo('index');
-      }
+    },
+
+    saveCategory(params) {
+      var newCategory = this.store.createRecord('category', params);
+      newCategory.save();
+      this.transitionTo('index');
+    }
   }
 });

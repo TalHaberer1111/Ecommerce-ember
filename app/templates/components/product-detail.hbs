@@ -1,1 +1,10 @@
-{{yield}}
+<div class="container product-detail">
+  <h3 class="product-title">{{product.title}}</h3>
+  <img class="product-list-view" src="{{product.image}}" alt="{{product.title}}" />
+  <p class="product-description">{{product.description}}</p>
+  <h5 class="product-cost">${{product.cost}}.</h5>
+  <button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
+</div>
+<div class="container">
+  {{edit-product}}
+</div>

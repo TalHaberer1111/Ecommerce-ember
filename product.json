@@ -1,4 +1,14 @@
 {
+  "categories": [{
+    "name": "Home",
+    "products": []
+  },{
+    "name": "Contraptions",
+    "products": []
+  },{
+    "name": "Doodads",
+    "products": []
+  }],
   "products": [{
     "title": "Butt Cream",
     "image": "https://edc2.healthtap.com/ht-staging/user_answer/reference_image/5446/large/Neomycin.jpeg?1386669692",

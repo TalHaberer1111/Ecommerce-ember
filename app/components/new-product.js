@@ -6,7 +6,10 @@ export default Ember.Component.extend({
     productFormShow(){
       this.set('addNewProduct', true);
     },
-    saveProduct() {
+    hideNewProductForm() {
+      this.set('addNewProduct', false);
+    },
+    saveProduct(product) {
       var params = {
         title: this.get('title'),
         image: this.get('image'),
@@ -15,7 +18,7 @@ export default Ember.Component.extend({
         category: this.get('category')
     };
     this.set('addNewProduct', false);
-    this.sendAction('saveProduct', params);
+    this.sendAction('saveProduct', product, params);
     }
-  } 
+  }
 });

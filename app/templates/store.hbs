@@ -1,7 +1,5 @@
-<h1>Products</h1>
-
-{{#each model as |product|}}
-  {{product-tile product=product}}
+{{#each model as |category|}}
+  {{#link-to 'category' category.id}}{{category-tile category=category}}{{/link-to}}
 {{/each}}
 
-{{display-cart}}
+{{new-category saveCategory="saveCategory" category=category}}
