@@ -5,5 +5,6 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       category: this.store.findAll('category'),
       product: this.store.findAll('product')
+    });
   }
 });

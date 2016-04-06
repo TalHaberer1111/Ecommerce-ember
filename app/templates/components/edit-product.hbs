@@ -1,0 +1,27 @@
+{{#if changeProduct}}
+  <div id="product-form">
+    <h2>Add New Product</h2>
+    <form>
+      <div class="form-group">
+        <label for="title">Product Name:</label>
+        {{input value=title id="title"}}
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL: </label>
+        {{input value=image id="image"}}
+      </div>
+      <div class="form-group">
+        <label for="description">Describe the Product:</label>
+        {{input value=description id="description"}}
+      </div>
+      <div class="form-group">
+        <label for="cost">Price: </label>
+        {{textarea value=cost id="cost"}}
+      </div>
+      <button class="btn btn-default" {{action 'saveProduct'}}>Put this Product Up for Sale</button>
+      <button class="btn btn-warning"{{action 'hideProductForm'}}>Cancel</button>
+    </form>
+  </div>
+{{else}}
+  <button id="ask-product" class="btn-lg btn-primary" {{action 'updateProductForm'}}>Sell a New Product</button>
+{{/if}}

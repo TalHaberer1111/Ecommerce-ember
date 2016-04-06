@@ -1,6 +1,10 @@
+<div class="container">
+
 {{product.title}}
-{{product.image}}
-{{product.description}}
-{{product.cost}}
+<img class="product-list-view" src="{{product.image}}" alt="{{product.title}}" />
+{{product.description}}<br>
+${{product.cost}}.<br>
 
 <button class="btn btn-default" {{action 'addToCart' product}}>Add to Cart</button>
+<br><br><br>
+</div>
