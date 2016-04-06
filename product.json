@@ -1,0 +1,21 @@
+{
+  "product": [{
+    "title": "Butt Cream",
+    "image": "https://edc2.healthtap.com/ht-staging/user_answer/reference_image/5446/large/Neomycin.jpeg?1386669692",
+    "description": "Soothe your most inflamed areas.",
+    "cost": 18.00,
+    "categories": []
+  },{
+    "title": "Bug Juice",
+    "image": "https://yumfortum.files.wordpress.com/2013/02/p1020945_2.jpg",
+    "description": "So much protein!",
+    "cost": 2.50,
+    "categories": []
+  },{
+    "title": "Anonymous Fungus",
+    "image": "https://s-media-cache-ak0.pinimg.com/236x/ed/3a/b5/ed3ab5b4caace0ff334d92b8f5d3f8f0.jpg",
+    "description": "I dunno, you figure it out.",
+    "cost": 45.00,
+    "categories": []
+  }]
+}
